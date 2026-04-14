@@ -34,7 +34,3 @@ jobs:
       with:
         name: jarfile
         path: target/*.jar
-    
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag otherdevopsgene/favorites:$(date +%Y%m%d%H%M%S.%N)
-      
